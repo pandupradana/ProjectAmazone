@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kontak">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F9"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logogambar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logogambar"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/realtive1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Alamat"
+                        android:textColor="#f0932b"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#C7C7C7"></View>
+
+                    <TextView
+                        android:id="@id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Workshop"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Mall Artha Gading Atrium India Lt. 2 (Jl. Boulevard Artha Gading Selatan No. 1 Kelapa Gading, Jakarta Utara 14240 – Indonesia)"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textworkshop"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Head Office"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textheadoffice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text3"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Rukan Little China Blok JC 1-5 Perum Legenda Wisata Cibubur."
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp">
+
+                <LinearLayout
+                    android:id="@+id/realtive2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Kontak Pusat"
+                        android:textColor="#f0932b"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#C7C7C7">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/ic_phone_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="(6221) 8249 0808"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/telephone"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="marketing@amazone.co.id"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/socialmedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Sosial Media"
+                    android:textColor="#f0932b"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/socialmedia"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#C7C7C7">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp">
+
+                    <Button
+                        android:id="@+id/instagram"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/button_menu"
+                        android:drawableTop="@drawable/ic_instagram_logo"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:id="@+id/twitter"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/button_menu"
+                        android:drawableTop="@drawable/ic_twitter_logo"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:id="@+id/facebook"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/button_menu"
+                        android:drawableTop="@drawable/ic_facebook_logo"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingTop="10dp" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

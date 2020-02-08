@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuLainnya">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F9"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonlain"
+                android:fontFamily="@font/opensans_semibold"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_050_money"
+                android:textAlignment="textStart"
+                android:paddingStart="20dp"
+                android:text="Detail Pembayaran" />
+
+            <Button
+                android:id="@+id/buttonlain1"
+                android:layout_below="@id/buttonlain"
+                android:fontFamily="@font/opensans_semibold"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_030_info"
+                android:textAlignment="textStart"
+                android:paddingStart="20dp"
+                android:text="TENTANG" />
+
+
+
+            <Button
+                android:id="@+id/buttonlain2"
+                android:clickable="true"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:layout_below="@id/buttonlain1"
+                android:layout_marginTop="2dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_logout"
+                android:paddingStart="23dp"
+                android:text="KELUAR" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:id="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

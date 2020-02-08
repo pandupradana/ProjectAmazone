@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleY="1"
+            app:mwhVelocity="1"
+            app:mwhProgress="1"
+            app:mwhIsRunning="true"
+            app:mwhGradientAngle="45"
+            app:mwhWaveHeight="50dp"
+            app:mwhColorAlpha="0.45"
+            app:mwhStartColor="#f0932b"
+            app:mwhCloseColor="#ff9f43"
+            app:mwhWaves="MultiWave"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/logogambar"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/logogambar"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/logo"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="30dp">
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:drawableStart="@drawable/ic_account_circle"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Email"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#2c3e50"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="#2c3e50"
+                android:textColor="#2c3e50">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColorHint="#2c3e50"
+                android:layout_marginBottom="35dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:background="@drawable/bg_rounded" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ripple_effect"
+                android:fontFamily="@font/opensans_bold"
+                android:text="LOGIN"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Belum punya akun? Daftar"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#f0932b"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+</LinearLayout>

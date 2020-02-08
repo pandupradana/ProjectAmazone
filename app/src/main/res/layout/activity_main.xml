@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFB"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="1dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hallo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/linear"
+                        android:layout_alignBottom="@+id/linear"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingStart="20dp"
+                        android:text="Hallo,"
+                        android:textColor="#CC000000"
+                        android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tampilusername"
+                    android:text="Username"
+                    android:paddingStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="#f0932b"
+                    />
+
+                </LinearLayout>
+
+
+                <android.widget.TextView
+                    android:layout_below="@+id/linear"
+                    android:id="@+id/textdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingStart="20dp"
+                    android:text="Tanggal"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp">
+
+                </android.widget.TextView>
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/textdate"
+                    android:layout_margin="10dp"
+                    android:background="#00FDFCFB"
+                    app:fillColor="#FFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="3dp"
+                    app:slideInterval="3000"
+                    app:strokeWidth="1dp">
+                </com.synnapps.carouselview.CarouselView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carouselview"
+                    app:cardBackgroundColor="#FDFCFB">
+
+                    <android.widget.TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingStart="20dp"
+                        android:text="Menu Informasi"
+                        android:textColor="#CC000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.widget.TextView>
+
+                    <android.widget.TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/opensans_light"
+                        android:paddingStart="20dp"
+                        android:text="Pilih menu yang anda inginkan"
+                        android:textColor="#CC000000"
+                        android:textSize="13sp"
+                        android:textStyle="">
+
+                    </android.widget.TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="45dp">
+
+                        <Button
+                            android:id="@+id/button1"
+
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_024_shop"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="OUTLET" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_003_tag"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="PROMO" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_036_topup"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="TOP UP" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linear1"
+                        android:layout_marginTop="145dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="10dp">
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_016_karir"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="KARIR" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_011_call_center"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="KONTAK" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="84dp"
+                            android:layout_height="84dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/button_menu"
+                            android:drawableTop="@drawable/ic_more_1"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingTop="10dp"
+                            android:text="LAINNYA" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardview"
+                    android:layout_marginTop="5dp">
+
+                    <android.widget.TextView
+                        android:id="@+id/text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingStart="20dp"
+                        android:text="Promosi"
+                        android:textColor="#CC000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </android.widget.TextView>
+
+                    <android.widget.TextView
+                        android:id="@+id/text7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/opensans_light"
+                        android:paddingStart="20dp"
+                        android:text="Pilih promosi yang anda inginkan"
+                        android:textColor="#CC000000"
+                        android:textSize="13sp"
+                        android:textStyle="">
+
+                    </android.widget.TextView>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_view_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        shimmer:duration="800">
+
+                        <!-- Adding 3 rows of placeholders -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/shimmer" />
+
+                            <include layout="@layout/shimmer" />
+
+                            <include layout="@layout/shimmer" />
+
+                            <include layout="@layout/shimmer" />
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        android:scrollbarThumbHorizontal="@android:color/white"
+                        android:scrollbars="horizontal" />
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

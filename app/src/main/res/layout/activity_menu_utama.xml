@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MenuUtama">
+
+
+    <RelativeLayout
+        android:id="@+id/dindingkanan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/opensans_regular"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:text="mosepatu@gmail.com"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTo"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="Subjek"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/editTextSubject"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="top|left"
+            android:hint="Ketik pesan disini!"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMessage"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:fontFamily="@font/opensans_bold"
+            android:text="KIRIM"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonAttachment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:fontFamily="@font/opensans_bold"
+            android:text="LAMPIRAN"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

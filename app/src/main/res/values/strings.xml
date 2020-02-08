@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Amazone Game Center</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_outlet_maps">Map</string>
+    <string name="title_activity_workshop_maps">Map</string>
+    <string name="title_activity_head_office_maps">Map</string>
+
+    <string-array name="outlet">
+        <item>Amazone Pluit Village</item>
+        <item>Amazone Wild Wild Congo</item>
+        <item>Amazone @ Bassura</item>
+        <item>Amazone Lotte Shopping Avenue</item>
+        <item>Amazone Permata Hijau</item>
+        <item>Amazing Town</item>
+        <item>Amazone Blok M</item>
+        <item>Amazing City</item>
+        <item>Amazone Paragon</item>
+        <item>Amazing D Caribbean</item>
+    </string-array>
+
+    <string-array name="nominal">
+        <item>25.000</item>
+        <item>50.000</item>
+        <item>75.000</item>
+        <item>100.000</item>
+        <item>150.000</item>
+        <item>200.000</item>
+        <item>300.000</item>
+        <item>500.000</item>
+        <item>800.000</item>
+        <item>1.000.000</item>
+    </string-array>
+    <string name="title_activity_maps_amazone_pluit_village">Map</string>
+    <string name="title_activity_maps_amazone_bassura">Map</string>
+    <string name="title_activity_maps_amazone_blok_m">Map</string>
+    <string name="title_activity_maps_amazone_gandaria">Map</string>
+    <string name="title_activity_maps_amazone_kasablanka">Map</string>
+    <string name="title_activity_maps_amazone_lotte">Map</string>
+    <string name="title_activity_maps_amazone_one_bell">Map</string>
+    <string name="title_activity_maps_amazone_paragon">Map</string>
+    <string name="title_activity_maps_amazone_permata_hijau">Map</string>
+    <string name="title_activity_maps_amazone_pluit_junction">Map</string>
+    <string name="title_activity_maps_amazone_wild_congo">Map</string>
+    <string name="amazing_d_caribbean">Amazing D Caribbean</string>
+</resources>
+
+
