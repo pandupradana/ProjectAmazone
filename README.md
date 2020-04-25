@@ -14,3 +14,5 @@ notifikasi ketika ada promosi atau event baru, pembelian saldo bermain melalui a
 <img border="none" height="500" width="230" src="https://user-images.githubusercontent.com/39307408/76276857-9b2b4f00-62b9-11ea-832e-ad5b12c45a4c.jpg" />
 <img border="none" height="500" width="230" src="https://user-images.githubusercontent.com/39307408/76277312-f873d000-62ba-11ea-91f1-e0196de80476.jpg" />
 </p>
+
+<b> 2019 <b>
